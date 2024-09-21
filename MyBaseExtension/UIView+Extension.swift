@@ -7,35 +7,35 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
     
-    public var kminX: CGFloat {
+    var kminX: CGFloat {
         frame.minX
     }
     
-    public var kminY: CGFloat {
+    var kminY: CGFloat {
         frame.minY
     }
     
-    public var kmaxX: CGFloat {
+    var kmaxX: CGFloat {
         frame.maxX
     }
     
-    public var kmaxY: CGFloat {
+    var kmaxY: CGFloat {
         frame.maxY
     }
     
-    public var kwidth: CGFloat {
+    var kwidth: CGFloat {
         frame.width
     }
     
-    public var kheight: CGFloat {
+    var kheight: CGFloat {
         frame.height
     }
     
     @discardableResult
     // 添加两层波纹动画
-    public func rippleAnimation(strokeColor: UIColor = .init(hex: 0x3F87FF), beginTime: CFTimeInterval = 0) -> [CAShapeLayer]? {
+    func rippleAnimation(strokeColor: UIColor = .init(hex: 0x3F87FF), beginTime: CFTimeInterval = 0) -> [CAShapeLayer]? {
         guard let superView = self.superview else { return nil }
         
         let beginPath = UIBezierPath(arcCenter: center, radius: min(kheight, kwidth) * 0.5 - 2, startAngle: 0, endAngle: .pi * 2, clockwise: true)

@@ -10,9 +10,9 @@ import Photos
 import EventKit
 import Contacts
 
-extension NSObject {
+public extension NSObject {
     
-    public func toSetting(title: String, message: String) {
+    func toSetting(title: String, message: String) {
         let vc = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
         let toSettingAction = UIAlertAction(title: "去设置", style: .default) { action in
@@ -33,7 +33,7 @@ extension NSObject {
     
     // MARK: - 相册权限
     /// 申请相册权限
-    public func requestPhotoPermission(_ block: @escaping ((PHAuthorizationStatus) -> Void)) {
+    func requestPhotoPermission(_ block: @escaping ((PHAuthorizationStatus) -> Void)) {
         let status: PHAuthorizationStatus
         if #available(iOS 14, *) {
             status = PHPhotoLibrary.authorizationStatus(for: .readWrite)
@@ -71,7 +71,7 @@ extension NSObject {
     }
     
     /// 申请相册权限带成功回调
-    public func requestPhotoPermissionWith(successBlock: @escaping (() -> Void)) {
+    func requestPhotoPermissionWith(successBlock: @escaping (() -> Void)) {
         let status: PHAuthorizationStatus
         if #available(iOS 14, *) {
             status = PHPhotoLibrary.authorizationStatus(for: .readWrite)
@@ -91,7 +91,7 @@ extension NSObject {
     
     // MARK: - 相机权限
     /// 申请相机权限
-    public func requestCameraPremission(_ block: @escaping ((AVAuthorizationStatus) -> Void)) {
+    func requestCameraPremission(_ block: @escaping ((AVAuthorizationStatus) -> Void)) {
         let status = AVCaptureDevice.authorizationStatus(for: .video)
         
         if status == .notDetermined {
@@ -110,7 +110,7 @@ extension NSObject {
     }
     
     /// 申请相机权限带成功回调
-    public func requestCameraPermissionWith(successBlock: @escaping (() -> Void)) {
+    func requestCameraPermissionWith(successBlock: @escaping (() -> Void)) {
         let firstRequest = AVCaptureDevice.authorizationStatus(for: .video) == .notDetermined
         
         requestCameraPremission { [weak self] status in
@@ -124,7 +124,7 @@ extension NSObject {
     
     // MARK: - 日历权限
     /// 申请日历权限
-    public func requestCalendarPermission(_ block: @escaping ((EKAuthorizationStatus) -> Void)) {
+    func requestCalendarPermission(_ block: @escaping ((EKAuthorizationStatus) -> Void)) {
         let status = EKEventStore.authorizationStatus(for: .event)
         
         if status == .notDetermined {
@@ -167,7 +167,7 @@ extension NSObject {
     }
     
     /// 申请日历权限带成功回调
-    public func requestCalendarPermisstionWith(successBlock: @escaping (() -> Void)) {
+    func requestCalendarPermisstionWith(successBlock: @escaping (() -> Void)) {
         let firstRequest = EKEventStore.authorizationStatus(for: .event) == .notDetermined
         
         requestCalendarPermission { [weak self] status in
@@ -190,7 +190,7 @@ extension NSObject {
     
     // MARK: - 麦克风权限
     /// 申请麦克风权限
-    public func requestMicrophonePermission(_ block: @escaping ((AVAuthorizationStatus) -> Void)) {
+    func requestMicrophonePermission(_ block: @escaping ((AVAuthorizationStatus) -> Void)) {
         let status = AVCaptureDevice.authorizationStatus(for: .audio)
         
         if status == .notDetermined {
@@ -209,7 +209,7 @@ extension NSObject {
     }
     
     /// 申请麦克风权限带成功回调
-    public func requestMicrophonePermisstionWith(successBlock: @escaping (() -> Void)) {
+    func requestMicrophonePermisstionWith(successBlock: @escaping (() -> Void)) {
         let firstRequest = AVCaptureDevice.authorizationStatus(for: .audio) == .notDetermined
         
         requestMicrophonePermission { [weak self] status in
@@ -247,7 +247,7 @@ extension NSObject {
     
     // MARK: - 申请人权限
     /// 申请联系人权限
-    public func requestContactPremission(_ block: @escaping ((CNAuthorizationStatus) -> Void)) {
+    func requestContactPremission(_ block: @escaping ((CNAuthorizationStatus) -> Void)) {
         let status = CNContactStore.authorizationStatus(for: .contacts)
         
         if status == .notDetermined {
@@ -270,7 +270,7 @@ extension NSObject {
     }
     
     /// 申请联系人权限带成功回调
-    public func requestContactPermisstionWith(successBlock: @escaping (() -> Void)) {
+    func requestContactPermisstionWith(successBlock: @escaping (() -> Void)) {
         let firstRequest = CNContactStore.authorizationStatus(for: .contacts) == .notDetermined
         
         requestContactPremission { [weak self] status in

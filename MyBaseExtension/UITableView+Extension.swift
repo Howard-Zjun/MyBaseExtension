@@ -7,9 +7,9 @@
 
 import UIKit
 
-extension UITableView {
+public extension UITableView {
     
-    public func register<T : UITableViewCell>(_ cellType: T.Type) {
+    func register<T : UITableViewCell>(_ cellType: T.Type) {
         if Bundle.main.path(forResource: String(describing: cellType), ofType: "nib")?.first != nil {
             register(.init(nibName: String(describing: cellType), bundle: nil), forCellReuseIdentifier: NSStringFromClass(cellType))
         } else {
@@ -17,7 +17,7 @@ extension UITableView {
         }
     }
     
-    public func dequeueReusableCell<T : UITableViewCell>(_ cellType: T.Type, indexPath: IndexPath) -> T {
+    func dequeueReusableCell<T : UITableViewCell>(_ cellType: T.Type, indexPath: IndexPath) -> T {
         if let cell = dequeueReusableCell(withIdentifier: NSStringFromClass(cellType), for: indexPath) as? T {
             return cell
         } else {
@@ -26,9 +26,9 @@ extension UITableView {
     }
 }
 
-extension UICollectionView {
+public extension UICollectionView {
     
-    public func register<T : UICollectionViewCell>(_ cellType: T.Type) {
+    func register<T : UICollectionViewCell>(_ cellType: T.Type) {
         if Bundle.main.path(forResource: String(describing: cellType), ofType: "nib")?.first != nil {
             register(.init(nibName: String(describing: cellType), bundle: nil), forCellWithReuseIdentifier: NSStringFromClass(cellType))
         } else {
@@ -36,7 +36,7 @@ extension UICollectionView {
         }
     }
     
-    public func dequeueReusableCell<T : UICollectionViewCell>(_ cellType: T.Type, indexPath: IndexPath) -> T {
+    func dequeueReusableCell<T : UICollectionViewCell>(_ cellType: T.Type, indexPath: IndexPath) -> T {
         if let cell = dequeueReusableCell(withReuseIdentifier: NSStringFromClass(cellType), for: indexPath) as? T {
             return cell
         } else {

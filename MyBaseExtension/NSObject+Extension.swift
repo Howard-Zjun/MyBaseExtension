@@ -7,10 +7,10 @@
 
 import UIKit
 
-extension NSObject {
+public extension NSObject {
     
     // 创建一个颜色图片
-    public func createImage(color: UIColor, size: CGSize) -> UIImage {
+    func createImage(color: UIColor, size: CGSize) -> UIImage {
         let rect = CGRectMake(0, 0, size.width, size.height)
         let renderer = UIGraphicsImageRenderer(size: size)
         let ret = renderer.image { context in
@@ -21,9 +21,9 @@ extension NSObject {
     }
 }
 
-extension CALayer {
+public extension CALayer {
     
-    public func createImage() -> UIImage {
+    func createImage() -> UIImage {
         let renderer = UIGraphicsImageRenderer(size: bounds.size)
         let ret = renderer.image { [weak self] context in
             self?.render(in: context.cgContext)
