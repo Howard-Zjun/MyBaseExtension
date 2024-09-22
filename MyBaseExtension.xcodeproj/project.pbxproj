@@ -94,7 +94,6 @@
 				9961DCC8279366B26CC87AD1 /* Pods-MyBaseExtension.debug.xcconfig */,
 				A908C41CBB47095F71504B3D /* Pods-MyBaseExtension.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
