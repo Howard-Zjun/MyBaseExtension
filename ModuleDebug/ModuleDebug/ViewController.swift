@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Debug
+//  ModuleDebug
 //
-//  Created by ios on 2024/9/21.
+//  Created by ios on 2024/9/23.
 //
 
 import UIKit
@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        "123".isNumber
+        print("123".isNumber)
     }
 
 

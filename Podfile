@@ -19,9 +19,9 @@ target 'MyBaseExtension' do
     commonPods
 end
 
-target 'Debug' do
+target 'ModuleDebug' do
   
-  project 'Debug/Debug.xcodeproj'
+  project 'ModuleDebug/ModuleDebug.xcodeproj'
   
   commonPods
 end

@@ -46,13 +46,6 @@
 			remoteGlobalIDString = EBD661092C9E558B0008E49E;
 			remoteInfo = MyBaseExtension;
 		};
-		EBD661572C9E5D3E0008E49E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EBD661532C9E5D3E0008E49E /* Debug.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EBD6613C2C9E5D3C0008E49E;
-			remoteInfo = Debug;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -73,7 +66,6 @@
 		EBD6611D2C9E55A10008E49E /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		EBD6611E2C9E55A10008E49E /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		EBD6611F2C9E55A10008E49E /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
-		EBD661532C9E5D3E0008E49E /* Debug.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Debug.xcodeproj; path = Debug/Debug.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +100,6 @@
 		EBD661002C9E558B0008E49E = {
 			isa = PBXGroup;
 			children = (
-				EBD661532C9E5D3E0008E49E /* Debug.xcodeproj */,
 				EBD6610C2C9E558B0008E49E /* MyBaseExtension */,
 				EBD6610B2C9E558B0008E49E /* Products */,
 				884B1CF9B80D2DA78D36D2C5 /* Pods */,
@@ -142,14 +133,6 @@
 				EBD6611A2C9E55A10008E49E /* URL+Extension.swift */,
 			);
 			path = MyBaseExtension;
-			sourceTree = "<group>";
-		};
-		EBD661542C9E5D3E0008E49E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EBD661582C9E5D3E0008E49E /* Debug.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,12 +198,6 @@
 			mainGroup = EBD661002C9E558B0008E49E;
 			productRefGroup = EBD6610B2C9E558B0008E49E /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = EBD661542C9E5D3E0008E49E /* Products */;
-					ProjectRef = EBD661532C9E5D3E0008E49E /* Debug.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				EBD661092C9E558B0008E49E /* MyBaseExtension */,
@@ -228,16 +205,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		EBD661582C9E5D3E0008E49E /* Debug.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = Debug.app;
-			remoteRef = EBD661572C9E5D3E0008E49E /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EBD661082C9E558B0008E49E /* Resources */ = {
