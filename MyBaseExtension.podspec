@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.name         = "MyBaseExtension"
   spec.version      = "0.0.2"
   spec.summary      = "基础拓展方法"
-
+  spec.swift_versions    = "5.1"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
