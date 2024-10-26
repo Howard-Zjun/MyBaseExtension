@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MyBaseExtension"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "基础拓展方法"
   spec.swift_versions    = "5.1"
 
@@ -31,7 +31,7 @@ Pod::Spec.new do |spec|
 			2.
                    DESC
 
-  spec.homepage     = "https://github.com/Howard-SSS/MyBaseExtension"
+  spec.homepage     = "https://github.com/Howard-Zjun/MyBaseExtension"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -83,7 +83,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/Howard-SSS/MyBaseExtension.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/Howard-Zjun/MyBaseExtension.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
