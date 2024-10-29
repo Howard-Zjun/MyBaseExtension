@@ -25,9 +25,13 @@ public extension String {
         components(separatedBy: .decimalDigits.union(.letters).inverted).joined() == self
     }
     
-    // MARK: - 剪切
     func textHeight(textWidth: CGFloat, font: UIFont) -> CGFloat {
         (self as NSString).boundingRect(with: .init(width: textWidth, height: CGFLOAT_MAX), attributes: [.font : font], context: nil).size.height
+    }
+    
+    /// 用于单行计算
+    func textWidth(font: UIFont) -> CGFloat {
+        (self as NSString).size(withAttributes: [.font : font]).width
     }
     
     /// 子字符串位置
@@ -43,6 +47,7 @@ public extension String {
         return NSNotFound
     }
     
+    // MARK: - 剪切
     /// 字符串剪切
     func substring(startOffset: Int, length: Int) -> String {
         if startOffset >= count {
