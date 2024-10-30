@@ -11,6 +11,12 @@ import CoreServices
 
 public class DFPickerPhotoManager: NSObject {
 
+    public var isPickerImage: Bool = true
+    
+    public var isPickerVideo: Bool = false
+    
+    public var isPickerLivePhoto: Bool = false
+    
     private var block: ((Any?) -> Void)
     
     public init(block: @escaping ((Any?) -> Void)) {
@@ -26,7 +32,17 @@ public class DFPickerPhotoManager: NSObject {
     private func selectPhoto() {
         if #available(iOS 14, *) {
             var config = PHPickerConfiguration()
-            config.filter = .any(of: [.images, .videos])
+            var arr: [PHPickerFilter] = []
+            if isPickerImage {
+                arr.append(.images)
+            }
+            if isPickerVideo {
+                arr.append(.videos)
+            }
+            if isPickerLivePhoto {
+                arr.append(.livePhotos)
+            }
+            config.filter = .any(of: arr)
             config.selectionLimit = 1
             config.preferredAssetRepresentationMode = .automatic
             // 1. automatic
@@ -53,10 +69,29 @@ public class DFPickerPhotoManager: NSObject {
             let vc = UIImagePickerController()
             vc.sourceType = .photoLibrary
 //            let types = UIImagePickerController.availableMediaTypes(for: .photoLibrary)
+            var arr: [String] = []
             if #available(iOS 14, *) {
-                vc.mediaTypes = [UTType.image.identifier, UTType.movie.identifier]
+                if isPickerImage {
+                    arr.append(UTType.image.identifier)
+                }
+                if isPickerVideo {
+                    arr.append(UTType.movie.identifier)
+                }
+                if isPickerLivePhoto {
+                    arr.append(UTType.livePhoto.identifier)
+                }
+                vc.mediaTypes = arr
             } else {
-                vc.mediaTypes = [kUTTypeImage as String, kUTTypeMovie as String]
+                if isPickerImage {
+                    arr.append(kUTTypeImage as String)
+                }
+                if isPickerVideo {
+                    arr.append(kUTTypeMovie as String)
+                }
+                if isPickerLivePhoto {
+                    arr.append(kUTTypeLivePhoto as String)
+                }
+                vc.mediaTypes = arr
             }
             vc.allowsEditing = false
             vc.delegate = self
