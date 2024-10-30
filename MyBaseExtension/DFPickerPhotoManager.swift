@@ -9,11 +9,11 @@ import UIKit
 import PhotosUI
 import CoreServices
 
-class DFPickerPhotoManager: NSObject {
+public class DFPickerPhotoManager: NSObject {
 
-    var block: ((Any?) -> Void)
+    private var block: ((Any?) -> Void)
     
-    init(block: @escaping ((Any?) -> Void)) {
+    public init(block: @escaping ((Any?) -> Void)) {
         self.block = block
     }
     
