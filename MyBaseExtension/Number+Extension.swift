@@ -9,7 +9,7 @@ import UIKit
 
 public extension NSNumber {
     
-    func stringFormat(locale: Locale) -> String? {
+    func mStringFormat(locale: Locale) -> String? {
         let numberFormatter = NumberFormatter()
         numberFormatter.locale = locale
         numberFormatter.numberStyle = .spellOut
@@ -17,13 +17,13 @@ public extension NSNumber {
     }
     
     /// 中文文字格式化
-    var zh_cnFormat: String? {
-        stringFormat(locale: .init(identifier: "zh_CN"))
+    var mZh_cnFormat: String? {
+        mStringFormat(locale: .init(identifier: "zh_CN"))
     }
     
     /// 英文文字格式化
-    var en_usFormat: String? {
-        stringFormat(locale: .init(identifier: "en_us"))
+    var mEn_usFormat: String? {
+        mStringFormat(locale: .init(identifier: "en_us"))
     }
     
     

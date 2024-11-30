@@ -1,5 +1,5 @@
 //
-//  DateUnit.swift
+//  MyDateUnit.swift
 //  MyBaseExtension
 //
 //  Created by ios on 2024/10/12.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DateUnit: NSObject {
+class MyDateUnit: NSObject {
 
     /// 毫秒
     static var currentMilliSecond: Int {

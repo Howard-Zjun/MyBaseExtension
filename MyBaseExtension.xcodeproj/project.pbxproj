@@ -23,15 +23,15 @@
 
 /* Begin PBXBuildFile section */
 		8BBDBE7DC0CCF04F9D26A22B /* Pods_MyBaseExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F28B444A91CE6A3C72F6B5E /* Pods_MyBaseExtension.framework */; };
-		EB031C122CBA748F0087B179 /* DateUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB031C112CBA748F0087B179 /* DateUnit.swift */; };
+		EB031C122CBA748F0087B179 /* MyDateUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB031C112CBA748F0087B179 /* MyDateUnit.swift */; };
 		EBA2B4592CF96F1A0069BE62 /* Number+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2B4582CF96F1A0069BE62 /* Number+Extension.swift */; };
+		EBA2B45F2CFADC0F0069BE62 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2B45E2CFADC0F0069BE62 /* UICollectionView+Extension.swift */; };
 		EBD6610E2C9E558B0008E49E /* MyBaseExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD6610D2C9E558B0008E49E /* MyBaseExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EBD661202C9E55A10008E49E /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD661142C9E55A10008E49E /* UIImage+Extension.m */; };
 		EBD661212C9E55A10008E49E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD661152C9E55A10008E49E /* UIColor+Extension.swift */; };
 		EBD661222C9E55A10008E49E /* UIImage+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD661162C9E55A10008E49E /* UIImage+Extension.h */; };
 		EBD661232C9E55A10008E49E /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD661172C9E55A10008E49E /* UITableView+Extension.swift */; };
 		EBD661242C9E55A10008E49E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD661182C9E55A10008E49E /* UIView+Extension.swift */; };
-		EBD661252C9E55A10008E49E /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD661192C9E55A10008E49E /* PermissionManager.swift */; };
 		EBD661262C9E55A10008E49E /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6611A2C9E55A10008E49E /* URL+Extension.swift */; };
 		EBD661272C9E55A10008E49E /* DFPickerPhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6611B2C9E55A10008E49E /* DFPickerPhotoManager.swift */; };
 		EBD661282C9E55A10008E49E /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6611C2C9E55A10008E49E /* UIImage+Extension.swift */; };
@@ -54,8 +54,9 @@
 		0F28B444A91CE6A3C72F6B5E /* Pods_MyBaseExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyBaseExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9961DCC8279366B26CC87AD1 /* Pods-MyBaseExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBaseExtension.debug.xcconfig"; path = "Target Support Files/Pods-MyBaseExtension/Pods-MyBaseExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		A908C41CBB47095F71504B3D /* Pods-MyBaseExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyBaseExtension.release.xcconfig"; path = "Target Support Files/Pods-MyBaseExtension/Pods-MyBaseExtension.release.xcconfig"; sourceTree = "<group>"; };
-		EB031C112CBA748F0087B179 /* DateUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUnit.swift; sourceTree = "<group>"; };
+		EB031C112CBA748F0087B179 /* MyDateUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDateUnit.swift; sourceTree = "<group>"; };
 		EBA2B4582CF96F1A0069BE62 /* Number+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Number+Extension.swift"; sourceTree = "<group>"; };
+		EBA2B45E2CFADC0F0069BE62 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		EBD6610A2C9E558B0008E49E /* MyBaseExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyBaseExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD6610D2C9E558B0008E49E /* MyBaseExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBaseExtension.h; sourceTree = "<group>"; };
 		EBD661142C9E55A10008E49E /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		EBD661162C9E55A10008E49E /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
 		EBD661172C9E55A10008E49E /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		EBD661182C9E55A10008E49E /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
-		EBD661192C9E55A10008E49E /* PermissionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
 		EBD6611A2C9E55A10008E49E /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
 		EBD6611B2C9E55A10008E49E /* DFPickerPhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFPickerPhotoManager.swift; sourceTree = "<group>"; };
 		EBD6611C2C9E55A10008E49E /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
@@ -125,7 +125,6 @@
 				EBD6610D2C9E558B0008E49E /* MyBaseExtension.h */,
 				EBD6611B2C9E55A10008E49E /* DFPickerPhotoManager.swift */,
 				EBD6611E2C9E55A10008E49E /* NSObject+Extension.swift */,
-				EBD661192C9E55A10008E49E /* PermissionManager.swift */,
 				EBD6611F2C9E55A10008E49E /* String+Extension.swift */,
 				EBD6611D2C9E55A10008E49E /* Tool.swift */,
 				EBD661152C9E55A10008E49E /* UIColor+Extension.swift */,
@@ -135,8 +134,9 @@
 				EBD661172C9E55A10008E49E /* UITableView+Extension.swift */,
 				EBD661182C9E55A10008E49E /* UIView+Extension.swift */,
 				EBD6611A2C9E55A10008E49E /* URL+Extension.swift */,
-				EB031C112CBA748F0087B179 /* DateUnit.swift */,
+				EB031C112CBA748F0087B179 /* MyDateUnit.swift */,
 				EBA2B4582CF96F1A0069BE62 /* Number+Extension.swift */,
+				EBA2B45E2CFADC0F0069BE62 /* UICollectionView+Extension.swift */,
 			);
 			path = MyBaseExtension;
 			sourceTree = "<group>";
@@ -271,13 +271,13 @@
 			files = (
 				EBD661202C9E55A10008E49E /* UIImage+Extension.m in Sources */,
 				EBD6612B2C9E55A10008E49E /* String+Extension.swift in Sources */,
-				EBD661252C9E55A10008E49E /* PermissionManager.swift in Sources */,
 				EBA2B4592CF96F1A0069BE62 /* Number+Extension.swift in Sources */,
 				EBD661272C9E55A10008E49E /* DFPickerPhotoManager.swift in Sources */,
 				EBD661282C9E55A10008E49E /* UIImage+Extension.swift in Sources */,
 				EBD661212C9E55A10008E49E /* UIColor+Extension.swift in Sources */,
 				EBD6612A2C9E55A10008E49E /* NSObject+Extension.swift in Sources */,
-				EB031C122CBA748F0087B179 /* DateUnit.swift in Sources */,
+				EBA2B45F2CFADC0F0069BE62 /* UICollectionView+Extension.swift in Sources */,
+				EB031C122CBA748F0087B179 /* MyDateUnit.swift in Sources */,
 				EBD661242C9E55A10008E49E /* UIView+Extension.swift in Sources */,
 				EBD661292C9E55A10008E49E /* Tool.swift in Sources */,
 				EBD661232C9E55A10008E49E /* UITableView+Extension.swift in Sources */,

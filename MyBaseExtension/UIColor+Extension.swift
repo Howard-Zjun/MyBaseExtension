@@ -24,7 +24,7 @@ public extension UIColor {
     }
     
     /// 创建一个颜色图片
-    func createImage(size: CGSize) -> UIImage {
+    func mRreateImage(size: CGSize) -> UIImage {
         let renderer = UIGraphicsImageRenderer(size: size)
         let ret = renderer.image { [weak self] context in
             self?.setFill()

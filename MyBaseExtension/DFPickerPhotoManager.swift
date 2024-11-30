@@ -24,7 +24,7 @@ public class DFPickerPhotoManager: NSObject {
     }
     
     public func selectPhotoAfterRequestPremission() {
-        requestPhotoPermissionWith { [weak self] in
+        mRequestPhotoPermissionWith { [weak self] in
             self?.selectPhoto()
         }
     }
@@ -63,7 +63,7 @@ public class DFPickerPhotoManager: NSObject {
             let vc = PHPickerViewController(configuration: config)
             vc.title = "选择图片"
             vc.delegate = self
-            kKeyWindow?.rootViewController?.present(vc, animated: true)
+            mKeyWindow?.rootViewController?.present(vc, animated: true)
         } else {
             // 不限制版本但不能多选
             let vc = UIImagePickerController()
@@ -95,7 +95,7 @@ public class DFPickerPhotoManager: NSObject {
             }
             vc.allowsEditing = false
             vc.delegate = self
-            kKeyWindow?.rootViewController?.present(vc, animated: true)
+            mKeyWindow?.rootViewController?.present(vc, animated: true)
         }
     }
 }
