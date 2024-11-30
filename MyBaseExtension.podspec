@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MyBaseExtension"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "基础拓展方法"
   spec.swift_versions    = "5.1"
 
