@@ -18,7 +18,7 @@ public extension NSObject {
     func createImage(colors: [UIColor], size: CGSize) -> UIImage {
         let cgColors = colors.map({ $0.cgColor })
         var locations: [CGFloat] = []
-        for (index, item) in colors.enumerated() {
+        for (index, _) in colors.enumerated() {
             locations.append(CGFloat(index) / CGFloat(colors.count - 1))
         }
         let gradient = CGGradient(colorsSpace: nil, colors: cgColors as CFArray, locations: locations)!
