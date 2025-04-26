@@ -104,4 +104,12 @@ public extension String {
         }
         return nil
     }
+    
+    func intValue(defaultValue: Int) -> Int {
+        if let ret = Int(self) {
+            return ret
+        } else {
+            return defaultValue
+        }
+    }
 }
