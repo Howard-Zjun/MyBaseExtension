@@ -26,6 +26,7 @@
 		EB031C122CBA748F0087B179 /* MyDateUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB031C112CBA748F0087B179 /* MyDateUnit.swift */; };
 		EB91D97B2D3B3F9E00943A17 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB91D97A2D3B3F9E00943A17 /* Date+Extension.swift */; };
 		EB96705F2DBC828B00283358 /* TimeResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB96705E2DBC828B00283358 /* TimeResolver.swift */; };
+		EB9670632DBCB4BF00283358 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9670622DBCB4BF00283358 /* Int+Extension.swift */; };
 		EBA2B4592CF96F1A0069BE62 /* Number+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2B4582CF96F1A0069BE62 /* Number+Extension.swift */; };
 		EBA2B45F2CFADC0F0069BE62 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA2B45E2CFADC0F0069BE62 /* UICollectionView+Extension.swift */; };
 		EBD6610E2C9E558B0008E49E /* MyBaseExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD6610D2C9E558B0008E49E /* MyBaseExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -59,6 +60,7 @@
 		EB031C112CBA748F0087B179 /* MyDateUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDateUnit.swift; sourceTree = "<group>"; };
 		EB91D97A2D3B3F9E00943A17 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		EB96705E2DBC828B00283358 /* TimeResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeResolver.swift; sourceTree = "<group>"; };
+		EB9670622DBCB4BF00283358 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		EBA2B4582CF96F1A0069BE62 /* Number+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Number+Extension.swift"; sourceTree = "<group>"; };
 		EBA2B45E2CFADC0F0069BE62 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		EBD6610A2C9E558B0008E49E /* MyBaseExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyBaseExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,7 @@
 				EBA2B45E2CFADC0F0069BE62 /* UICollectionView+Extension.swift */,
 				EB91D97A2D3B3F9E00943A17 /* Date+Extension.swift */,
 				EB96705E2DBC828B00283358 /* TimeResolver.swift */,
+				EB9670622DBCB4BF00283358 /* Int+Extension.swift */,
 			);
 			path = MyBaseExtension;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB96705F2DBC828B00283358 /* TimeResolver.swift in Sources */,
+				EB9670632DBCB4BF00283358 /* Int+Extension.swift in Sources */,
 				EBD661202C9E55A10008E49E /* UIImage+Extension.m in Sources */,
 				EBD6612B2C9E55A10008E49E /* String+Extension.swift in Sources */,
 				EBA2B4592CF96F1A0069BE62 /* Number+Extension.swift in Sources */,
