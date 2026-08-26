@@ -37,7 +37,6 @@
 		EBD661232C9E55A10008E49E /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD661172C9E55A10008E49E /* UITableView+Extension.swift */; };
 		EBD661242C9E55A10008E49E /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD661182C9E55A10008E49E /* UIView+Extension.swift */; };
 		EBD661262C9E55A10008E49E /* URL+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6611A2C9E55A10008E49E /* URL+Extension.swift */; };
-		EBD661272C9E55A10008E49E /* DFPickerPhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6611B2C9E55A10008E49E /* DFPickerPhotoManager.swift */; };
 		EBD661282C9E55A10008E49E /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6611C2C9E55A10008E49E /* UIImage+Extension.swift */; };
 		EBD661292C9E55A10008E49E /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6611D2C9E55A10008E49E /* Tool.swift */; };
 		EBD6612A2C9E55A10008E49E /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD6611E2C9E55A10008E49E /* NSObject+Extension.swift */; };
@@ -73,7 +72,6 @@
 		EBD661172C9E55A10008E49E /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		EBD661182C9E55A10008E49E /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		EBD6611A2C9E55A10008E49E /* URL+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Extension.swift"; sourceTree = "<group>"; };
-		EBD6611B2C9E55A10008E49E /* DFPickerPhotoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFPickerPhotoManager.swift; sourceTree = "<group>"; };
 		EBD6611C2C9E55A10008E49E /* UIImage+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		EBD6611D2C9E55A10008E49E /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
 		EBD6611E2C9E55A10008E49E /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				EBD6610D2C9E558B0008E49E /* MyBaseExtension.h */,
-				EBD6611B2C9E55A10008E49E /* DFPickerPhotoManager.swift */,
 				EBD6611E2C9E55A10008E49E /* NSObject+Extension.swift */,
 				EBD6611F2C9E55A10008E49E /* String+Extension.swift */,
 				EBD6611D2C9E55A10008E49E /* Tool.swift */,
@@ -287,7 +284,6 @@
 				EBD661202C9E55A10008E49E /* UIImage+Extension.m in Sources */,
 				EBD6612B2C9E55A10008E49E /* String+Extension.swift in Sources */,
 				EBA2B4592CF96F1A0069BE62 /* Number+Extension.swift in Sources */,
-				EBD661272C9E55A10008E49E /* DFPickerPhotoManager.swift in Sources */,
 				EBD661282C9E55A10008E49E /* UIImage+Extension.swift in Sources */,
 				EBD661212C9E55A10008E49E /* UIColor+Extension.swift in Sources */,
 				EBD6612A2C9E55A10008E49E /* NSObject+Extension.swift in Sources */,
